@@ -55,7 +55,8 @@ const app = (function () {
             alert('Need text in box');
         } else {
             //msg obj went
-            HTTP.post('http://localhost:3000/messages', msg, function (err, res) {
+            //changed port
+            HTTP.post('http://localhost:5000/messages', msg, function (err, res) {
                 if (err) { console.log(err); } else { console.log('post worked' + res); }
 
             });
@@ -66,8 +67,8 @@ const app = (function () {
         //e.preventDefault();
 
     });
-
-    HTTP.get('http://localhost:3000/messages', function (err, res) {
+//change port from 3000 to 5000
+    HTTP.get('http://localhost:5000/messages', function (err, res) {
         if (err) { console.log(err) } else {
             UI.postMsg(JSON.parse(res));
 
