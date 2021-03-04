@@ -59,10 +59,8 @@ const app = (function () {
         if (text.length == 0) {
             alert('Need text in box');
         } else {
-            //msg obj went
-            //changed port
-            // HTTP.post('http://localhost:5000/messages', msg, function (err, res)
-            HTTP.post('https://calm-castle-03617.herokuapp.com/messages', msg, function (err, res) {
+           //change port URL
+             HTTP.post('http://localhost:5000/messages', msg, function (err, res){
                 if (err) { console.log(err); } else { console.log('post worked' + res); }
 
             });
@@ -73,8 +71,8 @@ const app = (function () {
        // e.preventDefault();
 
     });
-//change port from 3000 to 5000
-    HTTP.get('https://calm-castle-03617.herokuapp.com/messages', function (err, res) {
+//change port URL
+    HTTP.get('http://localhost:5000/messages', function (err, res) {
         if (err) { console.log(err) } else {
             UI.postMsg(JSON.parse(res));
 
