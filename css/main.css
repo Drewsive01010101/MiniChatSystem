@@ -1,0 +1,25 @@
+h1{ 
+    font-family: 'Roboto', sans-serif}
+
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+#text-box{
+    width:1000px;
+}
+
+
+.title-box{
+    background-color:#14d4f4 ;
+    padding:4px;
+    margin-bottom:1rem;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+color:white;
+background-color: #14d4f4;
+
+}
