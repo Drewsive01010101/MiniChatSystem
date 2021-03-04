@@ -61,7 +61,8 @@ const app = (function () {
         } else {
             //msg obj went
             //changed port
-            HTTP.post('http://localhost:5000/messages', msg, function (err, res) {
+            // HTTP.post('http://localhost:5000/messages', msg, function (err, res)
+            HTTP.post('https://calm-castle-03617.herokuapp.com/messages', msg, function (err, res) {
                 if (err) { console.log(err); } else { console.log('post worked' + res); }
 
             });
@@ -73,7 +74,7 @@ const app = (function () {
 
     });
 //change port from 3000 to 5000
-    HTTP.get('http://localhost:5000/messages', function (err, res) {
+    HTTP.get('https://calm-castle-03617.herokuapp.com/messages', function (err, res) {
         if (err) { console.log(err) } else {
             UI.postMsg(JSON.parse(res));
 
