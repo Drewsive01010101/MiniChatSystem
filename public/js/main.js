@@ -63,7 +63,7 @@ const app = (function () {
 
         }
 
-        e.preventDefault();
+        //e.preventDefault();
 
     });
 

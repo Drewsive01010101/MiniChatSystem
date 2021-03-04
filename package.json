@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server":"json-server -w ./data/userdata.json"
+    "start": "json-server -w data/userdata.json" 
   },
   "keywords": [],
   "author": "",
